@@ -1,5 +1,7 @@
 package sensoremctrl.webapi.sensoremctrlapi.Table;
 
+import org.springframework.context.annotation.Bean;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
