@@ -20,9 +20,4 @@ public class AccountController {
         Account user = new Account(firstName, lastName, email, userPassword, true);
         repository.save(user);
     }
-
-    public void  bla() {
-
-    }
-
 }
