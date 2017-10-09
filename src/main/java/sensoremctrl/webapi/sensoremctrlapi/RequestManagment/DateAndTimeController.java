@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import sensoremctrl.webapi.sensoremctrlapi.Model.DateAndTimeRepository;
 
 @RestController
-@RequestMapping(value = "/timestamp")
+@RequestMapping(value = "/api/timestamp")
 public class DateAndTimeController {
 
     @Autowired

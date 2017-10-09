@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import sensoremctrl.webapi.sensoremctrlapi.Model.HumidityRepository;
 
 @RestController
-@RequestMapping(value = "/humidity")
+@RequestMapping(value = "/api/humidity")
 public class HumidityController {
 
     @Autowired
