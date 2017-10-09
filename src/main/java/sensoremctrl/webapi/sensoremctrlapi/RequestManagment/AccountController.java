@@ -21,6 +21,8 @@ public class AccountController {
         repository.save(user);
     }
 
+    public void  bla() {
 
+    }
 
 }
