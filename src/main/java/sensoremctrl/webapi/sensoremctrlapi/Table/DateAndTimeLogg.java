@@ -12,7 +12,6 @@ public class DateAndTimeLogg implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long timeStampID;
-
     private Date timeStamp;
 
     protected DateAndTimeLogg(){

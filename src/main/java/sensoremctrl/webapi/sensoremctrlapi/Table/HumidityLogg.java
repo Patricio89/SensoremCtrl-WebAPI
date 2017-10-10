@@ -5,13 +5,12 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "humidity")
+@Table(name = "humiditylog")
 public class HumidityLogg implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long humidityID;
-
     private int humidity;
 
     protected HumidityLogg(){

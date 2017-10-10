@@ -8,32 +8,32 @@ import java.io.Serializable;
 @Table(name = "temperaturelog")
 public class TemperatureLogg implements Serializable{
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        private int temperatureId;
-        private int temperature;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int temperatureId;
+    private int temperature;
 
 
-        protected TemperatureLogg(){
-        }
+    protected TemperatureLogg(){
+    }
 
-        public TemperatureLogg(int temperature) {
+    public TemperatureLogg(int temperature) {
             this.temperature = temperature;
         }
 
-        public int getTemperature() {
+    public int getTemperature() {
             return temperature;
         }
 
-        public void setTemperature(int temperature) {
+    public void setTemperature(int temperature) {
             this.temperature = temperature;
         }
 
-        public int getTemperatureId() {
+    public int getTemperatureId() {
             return temperatureId;
         }
 
-        public void setTemperatureId(int temperatureId) {
+    public void setTemperatureId(int temperatureId) {
             this.temperatureId = temperatureId;
         }
 
