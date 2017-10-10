@@ -15,9 +15,20 @@ public class AccountController {
     private AccountRepository repository;
 
 
-    @RequestMapping(value = "register", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/register", method = RequestMethod.POST)
     public void createNewUser(String firstName, String lastName, String email, String userPassword, boolean admin){
         Account user = new Account(firstName, lastName, email, userPassword, true);
         repository.save(user);
     }
+
+//    @RequestMapping(method = RequestMethod.GET)
+//    public String getAccountEmail(){
+//        Account account;
+//        String email = account.getEmail();
+//
+//        return email;
+//    }
+
+
+
 }
