@@ -18,5 +18,8 @@ public class TemperatureController {
     @Autowired
     private TemperatureRepository temperatureRepository;
 
-
+    @RequestMapping(method = RequestMethod.GET)
+    public List<TemperatureLogg> getTemperatures() {
+        return temperatureRepository.findAll();
+    }
 }
