@@ -1,11 +1,11 @@
-package sensoremctrl.webapi.sensoremctrlapi.Model;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import sensoremctrl.webapi.sensoremctrlapi.Table.Account;
-
-public interface AccountRepository extends JpaRepository<Account, Long> {
-
-    Account create();
-
-    Account retrieve(long id);
-}
+//package sensoremctrl.webapi.sensoremctrlapi.Model;
+//
+//import org.springframework.data.jpa.repository.JpaRepository;
+//import sensoremctrl.webapi.sensoremctrlapi.Table.Account;
+//
+//public interface AccountRepository extends JpaRepository<Account, Long> {
+//
+//    Account create();
+//
+//    Account retrieve(long id);
+//}
