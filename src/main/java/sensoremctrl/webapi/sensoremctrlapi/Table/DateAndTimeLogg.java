@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "dateandtimelog")
+@Table(name = "dateandtime")
 public class DateAndTimeLogg implements Serializable{
 
     @Id
