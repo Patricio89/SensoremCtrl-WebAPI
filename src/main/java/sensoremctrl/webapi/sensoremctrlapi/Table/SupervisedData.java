@@ -7,15 +7,28 @@ import javax.persistence.*;
 public class SupervisedData {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long supervisedID;
+    private String email;
 
-    public long getSupervisedID() {
-        return supervisedID;
+    private int temperature;
+    private int humidity;
+
+    public SupervisedData(String email, int temperature, int humidity) {
+        this.email = email;
+        this.temperature = temperature;
+        this.humidity = humidity;
     }
 
-    public void setSupervisedID(long supervisedID) {
-        this.supervisedID = supervisedID;
+    public SupervisedData(int temperature, int humidity) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getTemperature() {
@@ -33,11 +46,5 @@ public class SupervisedData {
     public void setHumidity(int humidity) {
         this.humidity = humidity;
     }
-
-    private int temperature;
-    private int humidity;
-
-
-
 
 }
