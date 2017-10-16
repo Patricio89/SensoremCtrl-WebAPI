@@ -18,6 +18,7 @@ public class SupervisedData {
         this.humidity = humidity;
     }
 
+    //To be used later for updates.
     public SupervisedData(int temperature, int humidity) {
         this.temperature = temperature;
         this.humidity = humidity;
