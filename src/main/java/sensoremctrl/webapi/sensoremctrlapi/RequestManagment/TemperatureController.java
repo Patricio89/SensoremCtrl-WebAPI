@@ -12,13 +12,12 @@ import java.util.Iterator;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/temperature")
 public class TemperatureController {
 
     @Autowired
     private TemperatureRepository temperatureRepository;
 
-    @RequestMapping(value = "/temp",method = RequestMethod.GET)
+    @RequestMapping(value = "/api/temperature",method = RequestMethod.GET)
     public List<TemperatureLogg> getTemperatures() {
         return temperatureRepository.findAll();
     }

@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import sensoremctrl.webapi.sensoremctrlapi.Table.TemperatureLogg;
 
 @Repository
-public interface TemperatureRepository extends JpaRepository<TemperatureLogg, Long> {
+public interface TemperatureRepository extends JpaRepository<TemperatureLogg, Integer> {
 }

@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "temperature")
+@Table(name = "temperaturelogg")
 public class TemperatureLogg implements Serializable{
 
         @Id
@@ -36,12 +36,12 @@ public class TemperatureLogg implements Serializable{
         public void setTemperatureId(int temperatureId) {
             this.temperatureId = temperatureId;
         }
-
-    @Override
-    public String toString() {
-        return "TemperatureLogg{" +
-                "temperature=" + temperature +
-                '}';
-    }
+//
+//    @Override
+//    public String toString() {
+//        return "TemperatureLogg{" +
+//                "temperature=" + temperature +
+//                '}';
+//    }
 }
 
