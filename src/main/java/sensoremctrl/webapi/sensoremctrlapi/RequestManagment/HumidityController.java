@@ -1,22 +1,27 @@
 package sensoremctrl.webapi.sensoremctrlapi.RequestManagment;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 import sensoremctrl.webapi.sensoremctrlapi.Model.HumidityRepository;
 import sensoremctrl.webapi.sensoremctrlapi.Table.HumidityLogg;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/humidity")
+@RequestMapping("/api")
 public class HumidityController {
 
-    @Autowired
     private HumidityRepository humidityRepository;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @Autowired
+    public HumidityController(HumidityRepository humidityRepository) {
+        this.humidityRepository = humidityRepository;
+    }
+
+    @RequestMapping(value = "/humidities", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin
     public List<HumidityLogg> getHumidities() {
         return humidityRepository.findAll();
     }

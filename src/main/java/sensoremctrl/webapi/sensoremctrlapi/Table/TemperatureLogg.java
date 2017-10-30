@@ -10,7 +10,10 @@ public class TemperatureLogg implements Serializable{
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "temperatureid")
         private int temperatureId;
+
+        @Column(name = "temperature")
         private int temperature;
 
 

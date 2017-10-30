@@ -1,22 +1,27 @@
 package sensoremctrl.webapi.sensoremctrlapi.RequestManagment;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 import sensoremctrl.webapi.sensoremctrlapi.Model.DateAndTimeRepository;
 import sensoremctrl.webapi.sensoremctrlapi.Table.DateAndTimeLogg;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/timestamp")
+@RequestMapping("/api")
 public class DateAndTimeController {
 
-    @Autowired
     private DateAndTimeRepository dateAndTimeRepository;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @Autowired
+    public DateAndTimeController(DateAndTimeRepository dateAndTimeRepository) {
+        this.dateAndTimeRepository = dateAndTimeRepository;
+    }
+
+    @RequestMapping(value = "/timestamps", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin
     public List<DateAndTimeLogg> getDateAndTime() {
         return dateAndTimeRepository.findAll();
     }
