@@ -7,9 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
-//@ComponentScan(basePackages = "sensoremctrl.webapi.sensoremctrlapi")
-//@EnableJpaRepositories(basePackages = "sensoremctrl.webapi.sensoremctrlapi.Model")
-//@EntityScan(basePackages = "sensoremctrl.webapi.sensoremctrlapi.Table")
 @SpringBootApplication
 public class SensoremctrlapiApplication {
 
@@ -17,5 +14,4 @@ public class SensoremctrlapiApplication {
 		SpringApplication.run(SensoremctrlapiApplication.class, args);
 	}
 
-	//push attempt.
 }
