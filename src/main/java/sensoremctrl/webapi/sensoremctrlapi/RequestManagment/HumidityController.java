@@ -21,7 +21,7 @@ public class HumidityController {
 
     @RequestMapping(value = "/humidities", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @CrossOrigin
+    //@CrossOrigin
     public List<HumidityLogg> getHumidities() {
         return humidityRepository.findAll();
     }

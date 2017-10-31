@@ -21,7 +21,7 @@ public class DateAndTimeController {
 
     @RequestMapping(value = "/timestamps", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @CrossOrigin
+    //@CrossOrigin
     public List<DateAndTimeLogg> getDateAndTime() {
         return dateAndTimeRepository.findAll();
     }
