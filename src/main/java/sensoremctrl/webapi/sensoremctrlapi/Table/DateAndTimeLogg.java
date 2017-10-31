@@ -40,11 +40,4 @@ public class DateAndTimeLogg implements Serializable{
     public void setTimeStamp(Date timeStamp) {
         this.timeStamp = timeStamp;
     }
-
-    @Override
-    public String toString() {
-        return "DateAndTimeLogg{" +
-                "timeStamp=" + timeStamp +
-                '}';
-    }
 }

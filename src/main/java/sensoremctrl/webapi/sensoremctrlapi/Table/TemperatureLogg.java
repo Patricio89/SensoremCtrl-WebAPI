@@ -39,12 +39,6 @@ public class TemperatureLogg implements Serializable{
         public void setTemperatureId(int temperatureId) {
             this.temperatureId = temperatureId;
         }
-//
-//    @Override
-//    public String toString() {
-//        return "TemperatureLogg{" +
-//                "temperature=" + temperature +
-//                '}';
-//    }
+
 }
 

@@ -39,11 +39,4 @@ public class HumidityLogg implements Serializable{
     public void setHumidity(int humidity) {
         this.humidity = humidity;
     }
-
-    @Override
-    public String toString() {
-        return "HumidityLogg{" +
-                "humidity=" + humidity +
-                '}';
-    }
 }
