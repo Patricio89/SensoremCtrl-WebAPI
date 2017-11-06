@@ -28,8 +28,4 @@ public class TemperatureController {
         return temperatureRepository.findAll();
     }
 
-    @RequestMapping(value = "/test")
-    public String test() {
-        return "Det funkar";
-    }
 }
