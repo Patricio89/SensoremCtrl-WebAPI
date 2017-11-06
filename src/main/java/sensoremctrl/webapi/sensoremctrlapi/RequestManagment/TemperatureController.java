@@ -23,7 +23,6 @@ public class TemperatureController {
 
     @RequestMapping(value = "/temperatures", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    //@CrossOrigin
     public List<TemperatureLogg> getTemperatures() {
         return temperatureRepository.findAll();
     }
