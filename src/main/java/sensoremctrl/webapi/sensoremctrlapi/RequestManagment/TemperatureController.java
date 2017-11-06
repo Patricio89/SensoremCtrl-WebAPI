@@ -21,14 +21,14 @@ public class TemperatureController {
         this.temperatureRepository = temperatureRepository;
     }
 
-    @RequestMapping(value = "/temperatures",method = RequestMethod.GET)
+    @RequestMapping(value = "/temperatures", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     //@CrossOrigin
     public List<TemperatureLogg> getTemperatures() {
         return temperatureRepository.findAll();
     }
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @RequestMapping(value = "/test")
     public String test() {
         return "Det funkar";
     }
