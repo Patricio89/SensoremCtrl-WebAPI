@@ -27,4 +27,9 @@ public class TemperatureController {
     public List<TemperatureLogg> getTemperatures() {
         return temperatureRepository.findAll();
     }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test() {
+        return "Det funkar";
+    }
 }
