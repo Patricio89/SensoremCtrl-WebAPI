@@ -27,4 +27,9 @@ public class TemperatureController {
         return temperatureRepository.findAll();
     }
 
+    @RequestMapping("/test")
+    public String testing() {
+        return "index";
+    }
+
 }
