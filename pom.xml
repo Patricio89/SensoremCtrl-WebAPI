@@ -6,7 +6,7 @@
 	<groupId>sensoremctrl.webapi</groupId>
 	<artifactId>sensoremctrlapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>sensoremctrlapi</name>
 	<description>WebAPI for PAAD project</description>
@@ -61,7 +61,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -88,10 +92,7 @@
 			<artifactId>thymeleaf-spring3</artifactId>
 			<version>3.0.3.RELEASE</version>
 		</dependency>
-
-
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -100,6 +101,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
