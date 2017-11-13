@@ -6,6 +6,7 @@ import sensoremctrl.webapi.sensoremctrlapi.Model.SupervisedDataRepository;
 import sensoremctrl.webapi.sensoremctrlapi.Table.SupervisedData;
 
 @RestController
+@RequestMapping
 public class SupervisedDataController {
 
     @Autowired
@@ -31,9 +32,11 @@ public class SupervisedDataController {
 
 
     @RequestMapping(value = "/api/ControllValues/{email}", method = RequestMethod.PUT)
-    public void updateControllValues(@PathVariable("email") String email){
+    public void updateControllValues(@PathVariable("email") String email, int temperature, int humidity){
 
-
+        //MÅSTE FIXAS, Uppdatera data för bestämd user dvs datat som tillhör emailen som hämtas in.
+        //simpelt exempel nedanför
+        // repository.findAll().contains(email);
 
 
 //        SupervisedData modifyDataControllByEmail = new SupervisedData(temperature, humidity);
