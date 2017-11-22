@@ -26,7 +26,7 @@ RESTful API for Project PAAD.
 * Patricio Morales - Junior Software Developer/Student - Github: https://github.com/Patricio89
 
 ## License
-* Nackademin AB © [Patricio Morales]()
-* Nackademin AB © [Adrian Wieslander]()
+* Intern - Software Developer (Student) © [Patricio Morales]()
+* Intern - Software Developer (Student) © [Adrian Wieslander]()
 * B3IT Innovation AB © [Johnne Adermark]()
 * B3IT Innovation AB © [Kenneth Andersson]()
